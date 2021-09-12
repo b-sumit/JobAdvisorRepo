@@ -11,10 +11,10 @@ public class JobEntity {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer id;
   private String title;
-  @OneToOne(fetch = FetchType.LAZY)
+  @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "company_id")
   private CompanyEntity company;
-  @OneToOne(fetch = FetchType.LAZY)
+  @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "location_id")
   private LocationEntity location;
   @ManyToMany(fetch = FetchType.LAZY)
