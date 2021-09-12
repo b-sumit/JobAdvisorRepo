@@ -1,0 +1,83 @@
+INSERT INTO "chameleon"."skill" ("id", "name") VALUES
+('1', 'java');
+INSERT INTO "chameleon"."skill" ("id", "name") VALUES
+('2', 'spring');
+INSERT INTO "chameleon"."skill" ("id", "name") VALUES
+('3', 'spring-boot');
+INSERT INTO "chameleon"."skill" ("id", "name") VALUES
+('4', 'mysql');
+INSERT INTO "chameleon"."skill" ("id", "name") VALUES
+('5', 'microservices');
+INSERT INTO "chameleon"."skill" ("id", "name") VALUES
+('6', 'git');
+INSERT INTO "chameleon"."skill" ("id", "name") VALUES
+('7', 'gradle');
+INSERT INTO "chameleon"."skill" ("id", "name") VALUES
+('8', 'maven');
+
+
+
+INSERT INTO "chameleon"."location" ("id", "name") VALUES
+('1', 'pune');
+INSERT INTO "chameleon"."location" ("id", "name") VALUES
+('2', 'bangalore');
+INSERT INTO "chameleon"."location" ("id", "name") VALUES
+('3', 'mumbai');
+INSERT INTO "chameleon"."location" ("id", "name") VALUES
+('4', 'delhi');
+INSERT INTO "chameleon"."location" ("id", "name") VALUES
+('5', 'noida');
+INSERT INTO "chameleon"."location" ("id", "name") VALUES
+('6', 'hyderabad');
+
+
+
+INSERT INTO "chameleon"."company" ("id", "about", "employee_strength", "founded_in", "name") VALUES
+('1', 'description', '1000', '1962', 'Deloitte');
+INSERT INTO "chameleon"."company" ("id", "about", "employee_strength", "founded_in", "name") VALUES
+('2', 'description', '2000', '1976', 'Capgemini');
+INSERT INTO "chameleon"."job" ("job_id", "job_description", "title", "location_id") VALUES
+('1', 'long description', 'web developer', '1');
+INSERT INTO "chameleon"."company" ("id", "about", "employee_strength", "founded_in", "name") VALUES
+('3', 'description', '3000', '1990', 'HCL');
+
+INSERT INTO "chameleon"."job" ("id", "job_description", "title", "company_id", "location_id") VALUES
+('1', 'description', 'developer', '1', '1');
+INSERT INTO "chameleon"."job" ("id", "job_description", "title", "company_id", "location_id") VALUES
+('2', 'description', 'consultant', '2', '2');
+INSERT INTO "chameleon"."job" ("id", "job_description", "title", "company_id", "location_id") VALUES
+('3', 'description', 'analyst', '3', '3');
+INSERT INTO "chameleon"."job" ("id", "job_description", "title", "company_id", "location_id") VALUES
+('4', 'description', 'manager', '2', '4');
+INSERT INTO "chameleon"."job" ("id", "job_description", "title", "company_id", "location_id") VALUES
+('5', 'description', 'developer', '3', '5');
+INSERT INTO "chameleon"."job" ("id", "job_description", "title", "company_id", "location_id") VALUES
+('6', 'description', 'consultant', '1', '6');
+
+
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('1', '1');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('1', '2');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('2', '3');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('2', '4');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('3', '5');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('3', '6');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('4', '7');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('4', '8');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('5', '1');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('5', '8');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('5', '1');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('6', '2');
+INSERT INTO "chameleon"."job_skills" ("job_entity_id", "skills_id") VALUES
+('6', '7');
